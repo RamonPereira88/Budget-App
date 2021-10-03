@@ -1,0 +1,17 @@
+@import '../../main-styles.scss';
+
+.titleIncome {
+  font-family: 'Saira', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: $green;
+  margin: -10px 0 15px 0;
+}
+.titleExpense {
+  font-family: 'Saira', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  color: $red;
+  margin: -10px 0 15px 0;
+}
+

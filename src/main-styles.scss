@@ -1,0 +1,29 @@
+// Defining the global styles and changing variables
+
+@charset "utf-8";
+
+// Import a Font from CDNFonts
+
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@100;200;300;400;500;600&display=swap');
+
+// Set your brand colors
+$purple: #9271f0;
+$light-gray: #f5f5f5;
+$dark: #191924;
+// $green: #00e895;
+$green: #009a63;
+$light-green: #b4f6cf;
+$red: #dc3900;
+$light-red: #f6e7e6;
+
+// Update Bulma's global variables
+$family-sans-serif: "Saira", sans-serif;
+$primary: $purple;
+$link: $purple;
+
+// Update some of Bulma's component variables
+$body-background-color: white;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-background-color: $light-gray;
+$input-shadow: none;

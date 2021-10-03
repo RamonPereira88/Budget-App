@@ -1,0 +1,18 @@
+<div class="top-bar">
+  <h1>Budget Calculator</h1>
+</div>
+
+<section class="total-budget-section">
+  <h2 [ngClass]="{ 'red': totalBudget < 0, 'green': totalBudget > 0 }">$ {{ totalBudget }},00</h2>
+</section>
+
+<section class="add-item-section">
+  <div class="add-item-container">
+    <add-item-form style="padding: 20px;" (formSubmit)="addItem($event)"></add-item-form>
+  </div>
+</section>
+
+<!-- added the style property to remove the margin it had pushing the line away from the above content making it unproportionate -->
+<hr style="margin-top: 0;">
+
+<budget-item-list [budgetItems]="BudgetItems" (delete)="deleteItem($event)"></budget-item-list>

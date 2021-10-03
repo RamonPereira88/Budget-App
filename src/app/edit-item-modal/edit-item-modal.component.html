@@ -1,0 +1,5 @@
+<!-- Show "Edit Income" if the event of click happens in one of the Incomes on the left side -->
+<h1 *ngIf="item.amount >= 0" class="titleIncome">Edit Income</h1>
+<!-- Show "Edit Expense" if the event of click happens in one of the Expenses on the right side -->
+<h1 *ngIf="item.amount < 0" class="titleExpense">Edit Expense</h1>
+<add-item-form [item]="item" (formSubmit)="onSubmit($event)"></add-item-form>
